@@ -9,7 +9,6 @@ public class vendingmachine {
         int choice = 0;
         int money = 0;
         int amount = 0;
-        int totaalbedrag, centen;
 
         ArrayList<String> alist = new ArrayList<String>();
         alist.add("Cola");
@@ -27,7 +26,7 @@ public class vendingmachine {
             if (money > 200) {
                 System.out.println("Please insert an amount lower than that!");
                 money = scanner.nextInt();
-            } else System.exit(0);
+            }
         }
         switch (choice) {
             case 1:
@@ -49,6 +48,8 @@ public class vendingmachine {
                 amount = money - Sprite;
                 System.out.println("Your change is:" + amount + " cent");
         }
+
+
 
     }
 }
