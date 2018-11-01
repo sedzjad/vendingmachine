@@ -5,7 +5,7 @@ public class vendingmachine {
 
     int Cola = 90;
     int Fanta = 90;
-    int Sprite = 95;
+    int Sprite = 90;
     int choice = 0;
     int money = 0;
     int amount = 0;
@@ -18,6 +18,11 @@ public class vendingmachine {
 
     System.out.println("We have the following drinks");
     System.out.println(alist);
+
+    System.out.println("Please enter your selection");
+    choice = scanner.nextInt();{
+        
+        }
 
     String drankjes;
             boolean yn = false;
