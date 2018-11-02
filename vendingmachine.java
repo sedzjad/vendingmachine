@@ -41,12 +41,13 @@ public class vendingmachine {
                 System.out.println("You have chosen Fanta!");
                 amount = money - Fanta;
                 System.out.println("Your change is:" + amount + " cent");
-
+                break;
             case 3:
                 System.out.println("You've entered:" + money + " cent");
                 System.out.println("You have chosen Sprite!");
                 amount = money - Sprite;
                 System.out.println("Your change is:" + amount + " cent");
+                break;
         }
 
 
