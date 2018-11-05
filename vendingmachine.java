@@ -65,18 +65,83 @@ public class vendingmachine {
                     System.out.println("You have chosen Cola!");
                     amount = money - Cola;
                     System.out.println("Your change is:" + amount + " cents");
+                    System.out.println("     ..  *    o\n" +
+                            "   o   *  .    *\n" +
+                            "     ________\n" +
+                            "    (________)\n" +
+                            "    |    o   |\n" +
+                            "    | o    o |\n" +
+                            "    |   o    |\n" +
+                            "    | o    o |\n" +
+                            "    | o  o   |\n" +
+                            "    |      o |\n" +
+                            "    ( o      )\n" +
+                            "     \\   o  /\n" +
+                            "      \\    /\n" +
+                            "       \\  /\n" +
+                            "        ||\n" +
+                            "        ||\n" +
+                            "        ||\n" +
+                            "        ||\n" +
+                            "        ||\n" +
+                            "     ___||___\n" +
+                            "    /   ||   \\\n" +
+                            "    \\________/");
                     break;
 
                 case 2:
                     System.out.println("You have chosen Fanta!");
                     amount = money - Fanta;
                     System.out.println("Your change is:" + amount + " cent");
+                    System.out.println("     ..  *    o\n" +
+                            "   o   *  .    *\n" +
+                            "     ________\n" +
+                            "    (________)\n" +
+                            "    |    o   |\n" +
+                            "    | o    o |\n" +
+                            "    |   o    |\n" +
+                            "    | o    o |\n" +
+                            "    | o  o   |\n" +
+                            "    |      o |\n" +
+                            "    ( o      )\n" +
+                            "     \\   o  /\n" +
+                            "      \\    /\n" +
+                            "       \\  /\n" +
+                            "        ||\n" +
+                            "        ||\n" +
+                            "        ||\n" +
+                            "        ||\n" +
+                            "        ||\n" +
+                            "     ___||___\n" +
+                            "    /   ||   \\\n" +
+                            "    \\________/");
                     break;
                 case 3:
                     System.out.println("You have chosen Sprite!");
                     amount = money - Sprite;
                     System.out.println("Your change is:" + amount + " cent");
-                    
+                    System.out.println("     ..  *    o\n" +
+                            "   o   *  .    *\n" +
+                            "     ________\n" +
+                            "    (________)\n" +
+                            "    |    o   |\n" +
+                            "    | o    o |\n" +
+                            "    |   o    |\n" +
+                            "    | o    o |\n" +
+                            "    | o  o   |\n" +
+                            "    |      o |\n" +
+                            "    ( o      )\n" +
+                            "     \\   o  /\n" +
+                            "      \\    /\n" +
+                            "       \\  /\n" +
+                            "        ||\n" +
+                            "        ||\n" +
+                            "        ||\n" +
+                            "        ||\n" +
+                            "        ||\n" +
+                            "     ___||___\n" +
+                            "    /   ||   \\\n" +
+                            "    \\________/");
                     break;
             }
             user = user - (money - amount);
