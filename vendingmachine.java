@@ -16,6 +16,8 @@ public class vendingmachine {
         alist.add("Fanta -.90");
         alist.add("Sprite -.90");
 
+        ArrayList<String> endlist = new ArrayList<String>();
+
         System.out.println("We have the following drinks");
         System.out.println(alist);
 
@@ -36,16 +38,19 @@ public class vendingmachine {
                 case 1:
                     alist.get(0);
                     System.out.println("That will be -.90");
+                    endlist.add("Cola");
                     break;
 
                 case 2:
                     alist.get(1);
                     System.out.println("That will be -.90");
+                    endlist.add("Fanta");
                     break;
 
                 case 3:
                     alist.get(2);
                     System.out.println("That will be -.90");
+                    endlist.add("Sprite");
                     break;
             }
 
@@ -147,6 +152,7 @@ public class vendingmachine {
             user = user - (money - amount);
         }
         System.out.println("You do not have enough money.");
+         System.out.println("Je hebt het volgende aangeschaft: " +endlist);
 
 
     }
