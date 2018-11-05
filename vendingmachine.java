@@ -9,47 +9,79 @@ public class vendingmachine {
         int choice = 0;
         int money = 0;
         int amount = 0;
+        int user = 500;
 
         ArrayList<String> alist = new ArrayList<String>();
-        alist.add("Cola");
-        alist.add("Fanta");
-        alist.add("Sprite");
+        alist.add("Cola -.90");
+        alist.add("Fanta -.90");
+        alist.add("Sprite -.90");
 
         System.out.println("We have the following drinks");
         System.out.println(alist);
 
-        System.out.println("Please enter your selection");
-        choice = scanner.nextInt();
-        {
-            System.out.println("Enter your amount in cents");
-            money = scanner.nextInt();
-            if (money > 200) {
-                System.out.println("Please insert an amount lower than that!");
-                money = scanner.nextInt();
+         while (user > 90){
+             System.out.println("Please enter your selection, you have: " + user + " cent left");
+             choice = scanner.nextInt();
+
+             if (choice < 1){
+                 System.out.println("Please choose again");
+                 choice = scanner.nextInt();
+             }
+             else if (choice> 3){
+                 System.out.println("Please choose again");
+                 choice = scanner.nextInt();
+             }
+
+            switch (choice) {
+                case 1:
+                    alist.get(0);
+                    System.out.println("That will be -.90");
+                    break;
+
+                case 2:
+                    alist.get(1);
+                    System.out.println("That will be -.90");
+                    break;
+
+                case 3:
+                    alist.get(2);
+                    System.out.println("That will be -.90");
+                    break;
             }
-        }
-        switch (choice) {
-            case 1:
-                System.out.println("You've entered:" + money + " cent");
-                System.out.println("You have chosen Cola!");
-                amount = money - Cola;
-                System.out.println("Your change is:" + amount + " cents");
-                break;
 
-            case 2:
-                System.out.println("You've entered:" + money + " cent");
-                System.out.println("You have chosen Fanta!");
-                amount = money - Fanta;
-                System.out.println("Your change is:" + amount + " cent");
-                break;
-            case 3:
-                System.out.println("You've entered:" + money + " cent");
-                System.out.println("You have chosen Sprite!");
-                amount = money - Sprite;
-                System.out.println("Your change is:" + amount + " cent");
-                break;
-        }
+            {
+                System.out.println("Enter your amount in cents");
+                money = scanner.nextInt();
+                if (money > 200) {
+                    System.out.println("Please insert an amount lower than that!");
+                    money = scanner.nextInt();
+                } else if (money < 90) {
+                    System.out.println("Please make sure to insert at least 90 cent");
+                    money = scanner.nextInt();
+                }
+            }
+            switch (choice) {
+                case 1:
+                    System.out.println("You have chosen Cola!");
+                    amount = money - Cola;
+                    System.out.println("Your change is:" + amount + " cents");
+                    break;
 
+                case 2:
+                    System.out.println("You have chosen Fanta!");
+                    amount = money - Fanta;
+                    System.out.println("Your change is:" + amount + " cent");
+                    break;
+                case 3:
+                    System.out.println("You have chosen Sprite!");
+                    amount = money - Sprite;
+                    System.out.println("Your change is:" + amount + " cent");
+                    
+                    break;
+            }
+            user = user - (money - amount);
+        }
+        System.out.println("You do not have enough money.");
 
 
     }
