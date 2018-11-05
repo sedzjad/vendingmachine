@@ -151,7 +151,7 @@ public class vendingmachine {
             }
             user = user - (money - amount);
         }
-        System.out.println("You do not have enough money.");
+         System.out.println("You do not have enough money.");
          System.out.println("Je hebt het volgende aangeschaft: " +endlist);
 
 
